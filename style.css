@@ -40,7 +40,7 @@ header {
 
 header section {
   margin: 0 auto;
-  max-width: 640px;
+  max-width: 750px;
 }
 
 header img {
@@ -86,22 +86,17 @@ a .fab {
 
 .course, .skills {
   display: -ms-flexbox;
-  display: flex;
+  display: block;
+  margin-bottom: 1em;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .course .title {
+  margin-bottom: 0.5em;
   color: #509e98;
-  -ms-flex: 0 0 33.3%;
-  flex: 0 0 33.3%;
-  max-width: 33%;
-}
-
-.course .descrition {
-  -ms-flex: 0 0 66.6%;
-  flex: 0 0 66.6%;
-  max-width: 66.6%;
+  font-weight: bold;
+  font-size: 1.5em; 
 }
 
 .course .descrition p {
@@ -151,7 +146,7 @@ footer {
     display: block;
   }
 
-  .course .title, .course .descrition {
+  .course .title, .course .description {
     max-width: 100%;
   }
 }
@@ -169,3 +164,4 @@ footer {
     text-align: center;
   }
 }
+

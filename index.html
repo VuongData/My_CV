@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <title>CV - Trần Thiện Vương</title>
-  <meta name="description" content="CV created with HTML and CSS">
+  <meta name="description" content="CV created with HTML, CSS, and JavaScript">
   <meta name="author" content="Fly Nerd">
   <link rel="icon" href="./img/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,174 +13,98 @@
 
 <body>
   <header>
+    <img src="cube.png" alt="floating cube" class="floating-cube">
     <div>
-      <img src="./myavatar.jpg" />
+      <img src="./myavatar.jpg" alt="Avatar"/>
     </div>
     <h1>Trần Thiện Vương</h1>
     <section>
-      <p>Hello! I am Vuong. I am a 3rd year student at the University of Science, Ho Chi Minh City. </p>
+      <p>Hello! I am Vuong. I am a 4th year student at the University of Science, Ho Chi Minh City. </p>
       <p>Major: Electric Physics Technology and Informatics.</p>
       <p>I have a passion for collecting, exploiting and analyzing data to find valuable insight. I am focused, devoted and hard-working, always ready to learn in a changing and challenging environment.</p>
-      <a href="https://www.facebook.com/vuong0607" target="_blank">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://github.com/VuongData" target="_blank">
-        <i class="fab fa-github-alt"></i>
-      </a>
-      <a href="https://www.instagram.com/louis.islou/" target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/tr%E1%BA%A7n-thi%E1%BB%87n-v%C6%B0%C6%A1ng/" target="_blank">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
+      <a href="https://www.facebook.com/vuong0607" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://github.com/VuongData" target="_blank"><i class="fab fa-github-alt"></i></a>
+      <a href="https://www.instagram.com/louis.islou/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/tr%E1%BA%A7n-thi%E1%BB%87n-v%C6%B0%C6%A1ng/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
     </section>
   </header>
-  <main>
-    <section>
-      <h3>Project</h3>
-
-      <article class='course'>
-        <div class='title'>
-          <h4>2025: Embedded Systems - ATmega128-Based Egg Incubator Controller</h4>
-        </div>
-        <div class="description">
-          <p>Engineered and prototyped a complete temperature and automation control system for an egg incubator, from circuit simulation in Proteus to a fully functional physical model.</p>
-          <p>Developed firmware using C in Microchip Studio for an ATmega128 microcontroller to monitor and display real-time temperature from an LM35 sensor onto an LCD.</p>
-          <p>Implemented a non-blocking system architecture using Timer1 interrupts for all periodic tasks, which eliminated inefficient delay functions and enabled simultaneous processing of sensor data, display updates, and motor control.</p>
-          <p>Integrated a user interface with push-buttons for Pause/Resume and Reset functions, utilizing the microcontroller's internal EEPROM to save and recall the last operational state, enhancing usability.</p>
-          <p>Technologies: ATmega128, Sensors (LM35,DHT22), Microchip Studio, ADC, PWM, Timer Interrupts, EEPROM.</p>
-        </div>
-      </article>
-
-      <article class='course'>
-        <div class='title'>
-          <h4>2025: Machine Learning - Hands Detection</h4>
-        </div>
-        <div class="description">
-          <p>Developed and trained a Convolutional Neural Network (CNN) model.</p>
-          <p>Applied Transfer Learning techniques using the VGG16 architecture, fine-tuning the model on a custom dataset of 5000+ images to accelerate convergence and enhance performance.</p>
-          <p>Achieved a 75% accuracy on the validation set, demonstrating the model's effectiveness and robustness.</p>
-          <p>Built an intuitive user interface with Python to provide a live demonstration of the model's recognition capabilities.</p>
-          <p>Technologies: Python, TensorFlow, Keras, OpenCV, CNN, VGG16</p>
-        </div>
-      </article>
-
-        <article class='course'>
-        <div class='title'>
-          <h4>2024:  Data-Driven Approaches to Volcanology. "When will Axial Seamountbe erupted?"</h4>
-        </div>
-        <div class="description">
-          <p> Provide visualization of hydrothermal plumesthe overthe years, using datacollected by COVIS.</p>
-          <p> Create contour imagesrepresenting the spatial distribution in the diffuse hydrothermal flow.</p>
-          <p>Design interactive visualization applications for detailed inspection of contourand 3D scatter images.</p>
-          <p> Based on our analysis and research, with some help from volcanologist, we can reasonably predict that Axia Seamountwill erupt by the end of2025 or sooner</p>
-        </div>
-        </article>
-
-        <article class='course'>
-        <div class='title'>
-          <h4>2024: Web Programming with HTML</h4>
-        </div>
-        <div class="description">
-          <p>Designed and developed a fully responsive personal portfolio website from scratch using HTML5 and CSS, ensuring a seamless experience across all devices.</p>
-          <p>Technologies: HTML5, CSS3, Visual Studio Code, Git.</p>
-        </div>
-        </article>
-
-       <article class='course'>
-        <div class='title'>
-          <h4>2024: Module Data Analysis - Air Quality</h4>
-        </div>
-        <div class="description">
-          <p>Conducted a comprehensive analysis of the "Vietnam Air Quality Data Series 2020" dataset from Open Development Mekong, performing extensive data cleaning and preprocessing on multiple attributes.</p>
-          <p>Developed a suite of data visualizations, including time-series charts, comparative bar graphs, and geospatial maps, to effectively communicate complex findings to a non-technical audience.</p>
-          <p>Technologies: Python, Pandas, NumPy, Matplotlib, Seaborn, Folium/GeoPandas.</p>
-        </div>
-      </article>
-        
-      <article class='course'>
-        <div class='title'>
-          <h4>2023: Coding a polynomial equation</h4>
-        </div>
-        <div class="description">
-          <p>Engineered a parser and calculator in C programing to compute polynomial equations from user-input character strings.</p>
-          <p>Ensured accurate computation and robust error handling, demonstrating a strong understanding of core data structures (stacks) and algorithms.</p>
-          <p>Technologies: C, Data Structures and Algorithms.</p>
-        </div>
-      </article>
   
-     
-      <article class='course'>
-        <div class='title'>
-          <h4>2022: Image Loader</h4>
-        </div>
-        <div class="description">
-          <p>Developed an image processing application with a MATLAB GUI to enable users to effectively denoise digital images.</p>
-          <p>Implemented and compared the performance of various filters (Median, Gaussian) for removing common noise types such as Salt & Pepper and Gaussian noise.</p>
-          <p>Successfully enhanced image quality, achieving an average increase of 20% in the Peak Signal-to-Noise Ratio (PSNR) post-filtering.</p>
-        </div>
-      </article>
-    </section>
-     <section>
-        <div>
-          <h4>AWARDS</h4>
-          <p>Received a prestigious award at HCMUS as a main contributor for scientific paper presented at International Conference ICEBA-2024.</p>
-        </div>
+  <main>
+    <div class="tabs-container">
+      <div class="tab-nav">
+        <button class="tab-link active" data-tab="projects">Project</button>
+        <button class="tab-link" data-tab="exercises">Bài tập</button>
+        <button class="tab-link" data-tab="skills">Skills & Education</button>
       </div>
-    </section>
-    <section>
-      <h3>Skills</h3>
-      <div class='skills'>
-        <div class='column'>
-          <h4>Programming Language</h4>
-          <ul>
-            <li>HTML5</li>
-            <li>C/C++</li>
-            <li>Python</li>
-            <li>MATLAB</li>
-          </ul>
-        </div>
-        <div class='column'>
-          <h4>Integrated Development Environment</h4>
-          <ul>
-            <li>Visual Studio Code</li>
-            <li>Dev-C</li>
-            <li>Origin</li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <div>
-          <h4>LANGUAGES</h4>
-          <p><small><b>VN</b></small> Vietnamese - Native speaker</p>
-          <p><small><b>ENG</b></small> English - Proficient B1</p>
-        </div>
-      </div>
-    </section>
 
-    <section>
-      <h3>Education</h3>
-      <article>
-        <div class='school'>
-          <span>2019-2022</span> <strong>Nguyen Cong Tru High School</strong>
-        </div>
-        <div class="description">
-          High school graduate
-        </div>
-      </article>
-      <article>
-        <div class='school'>
-          <span>2022-now</span> <strong>Ho Chi Minh University of Science </strong>
-        </div>
-        <div>
-          Majoring in Electric Physics Technology and Informatics.
-        </div>
-      </article>
-    </section>
+      <div id="projects" class="tab-content active">
+        <section>
+            <h3>Project</h3>
     
+            <div class="container project-slider-container">
+              <div class="slider">
+                </div>
+        
+              <div class="navigation-button" id="navButtons">
+              </div>
+        
+              <button id="prevButton" class="nav-button prev">
+                &#10094;
+              </button>
+              <button id="nextButton" class="nav-button next">
+                &#10095;
+              </button>
+            </div>
+            
+          </section>
+      </div>
+      <div id="exercises" class="tab-content">
+        <section>
+            <h3>Practice</h3>
+            <article class='course'>
+              <div class='title'><h4>TÍCH HỢP API</h4></div>
+              <div class="description" id="api-in-class-results">
+                 </div>
+            </article>
+            <article class='course'>
+                <div class='title'><h4>EXCHANGE-RATE WIDGET USD → VND</h4></div>
+                <div class="description" id="exchange-rate-widget">
+                  <p>Tỷ giá hiện tại: <strong id="rate-display">Đang tải...</strong></p>
+                  <button id="refresh-button">Làm mới</button>
+                </div>
+              </article>
+          </section>
+      </div>
+
+      <div id="skills" class="tab-content">
+        <section>
+            <h3>Skills</h3>
+            <div class='skills'>
+              <div class='column'>
+                <h4>Programming Language</h4>
+                <ul><li>HTML5</li><li>C/C++</li><li>Python</li><li>MATLAB</li></ul>
+              </div>
+              <div class='column'>
+                <h4>Integrated Development Environment</h4>
+                <ul><li>Visual Studio Code</li><li>Dev-C</li><li>Origin</li></ul>
+              </div>
+            </div>
+        </section>
+        <section>
+          <h3>Education</h3>
+          <article>
+            <div class='school'><span>2022-nay</span> <strong>Ho Chi Minh University of Science</strong></div>
+            <div>Majoring in Electric Physics Technology and Informatics.</div>
+          </article>
+        </section>
+      </div>
+    </div>
   </main>
+
   <footer>
-    <p></a>  
+    <p>Contact: +84 798 811 474. Gmail: tranthienvuong71@gmail.com</p>  
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

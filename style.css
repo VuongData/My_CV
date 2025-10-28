@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+  margin: 0;
+  font-family: "Raleway";
+  font-size: 16px;
+  line-height: 1.8em;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: #1C9C94;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.5;
+}
+
+article {
+  padding:0 1em;
+}
+section{
+  padding: 1em;
+}
+
+header, main, footer {
+  margin: 0 auto;
+}
+header {
+  position: relative;
+  padding: 2em;
+  text-align: center;
+  background-image: url('./bg.jpg');
+  background-size: cover;
+  background-position: fixed;
+  color: white;
+}
+header section {
+  margin: 0 auto;
+  max-width: 750px;
+}
+header section p {
+  font-weight: bold;
+}
+
+header img {
+  border-radius: 90%;
+  max-width: 150px;
+}
+
+h1, h3, h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+h1 { margin: 1em 0; }
+main {
+  max-width: 1140px;
+  background-color: white;
+  min-height: 60vh;
+}
+
+.fab {
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin: 5px;
+  text-align: center;
+}
+a .fab { color: white; }
+
+.course {
+  margin-bottom: 1em;
+}
+.course .title {
+  margin-bottom: 0.5em;
+  color: #509e98;
+  font-size: 1.2em; 
+}
+.course .description p { padding-left: 1em; }
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills .column {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.skills .column ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.skills .column ul > li:before {
+  content: "►";
+  padding-right: 0.5em;
+  color: #509e98;
+}
+
+/* --- TAB STYLES --- */
+.tabs-container {
+    width: 100%;
+}
+.tab-nav {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    background-color: #f9f9f9;
+}
+.tab-link {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 1em;
+    font-weight: bold;
+    color: #555;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+.tab-link:hover {
+    background-color: #e9e9e9;
+    color: #111;
+}
+.tab-link.active {
+    color: #509e98;
+    border-bottom: 3px solid #509e98;
+}
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+.tab-content.active {
+    display: block;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* --- END TAB STYLES --- */
+
+
+/* --- WIDGET & API STYLES --- */
+.widget-button {
+    background-color: #509e98;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.widget-button:hover {
+    opacity: 0.8;
+}
+
+.pikachu-variants {
+    display: none;
+    flex-wrap: wrap;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.pikachu-variants.visible {
+    display: flex;
+}
+.pikachu-variants img {
+    width: 80px;
+    height: 80px;
+    image-rendering: pixelated; 
+    border: 1px solid #ddd;
+    margin: 5px;
+    background-color: white;
+}
+#pikachu-sprite-count {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.api-section {
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+    border-bottom: 1px dashed #ccc;
+}
+.api-section:last-child {
+    border-bottom: none;
+}
+.api-section h5 {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+.weather-status {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+.weather-icon {
+    font-size: 2.5em; 
+    margin-right: 15px;
+}
+
+
+/* --- FOOTER --- */
+footer {
+ padding: 1em 1.5em;
+ background: #333;
+ color: white;
+ text-align: center;
+}
+
+/* === CSS CHO SLIDER === */
+.project-slider-container {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  margin: 20px auto;
+  position: relative;
+}
+
+.slider {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.slider .project-slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateX(100%);
+  border-radius: 15px;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box; /* Thêm để padding không làm vỡ layout */
+}
+
+.slider .project-slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 10;
+}
+
+.slider .project-slide.previous {
+  transform: translateX(-100%);
+  opacity: 0;
+  z-index: 5;
+}
+
+/* Style cho nội dung text bên trong slide */
+.project-slide-content {
+  max-width: 90%;
+}
+.project-year {
+  display: inline-block;
+  background-color: #d4edda;
+  color: #155724;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.project-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.project-tech {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* CSS cho các nút */
+.navigation-button {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 20;
+}
+
+.line {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #777;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.line.active {
+  background-color: #333;
+  transform: scale(1.2);
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(134, 129, 129, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 15px;
+  z-index: 20;
+  transition: background-color 0.3s, transform 0.3s;
+  transform: translateY(-50%);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+/* Media queries */
+@media (max-width: 890px) {
+  .nav-button {
+    font-size: 22px;
+    padding: 11px;
+  }
+  .navigation-button {
+    bottom: 12px;
+  }
+  .line {
+    height: 9px;
+    width: 9px;
+  }
+  
+  .slider .project-slide {
+    padding: 2rem;
+  }
+  .project-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .project-slider-container {
+    width: 95%;
+    margin-top: 10px;
+  }
+  .navigation-button {
+    bottom: 10px;
+  }
+  .line {
+    height: 7px;
+    width: 7px;
+  }
+  .nav-button {
+    font-size: 14px;
+    padding: 7px;
+  }
+  
+  .slider .project-slide {
+    padding: 1.5rem;
+  }
+  .project-title {
+    font-size: 1.1rem;
+  }
+  .project-description {
+    font-size: 0.9rem;
+  }
+}
+
+.floating-cube {
+  position: absolute;
+  width: 100px; /* Chỉnh kích thước cube theo ý bạn */
+  top: 150px;     /* Chỉnh vị trí (cách lề trên) */
+  left: 5%;       /* Chỉnh vị trí (cách lề trái) */
+  
+  /* Áp dụng animation, giống file about-me.css */
+  animation: float 6s ease-in-out infinite; 
+}
+
+/* --- ANIMATION LƠ LỬNG --- */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Ẩn cube trên màn hình nhỏ (dưới 768px) */
+@media (max-width: 768px) {
+  .floating-cube {
+    display: none;
+  }
+}
